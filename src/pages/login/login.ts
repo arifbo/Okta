@@ -28,7 +28,7 @@ export class LoginPage {
   constructor(private navCtrl: NavController, private oauthService: OAuthService) {
     oauthService.redirectUri = 'http://localhost:8100';
     oauthService.clientId = '0oadtjyti8yLOIqNs0h7';
-    oauthService.scope = 'arif@kreatifdinamika.com';
+    oauthService.scope = 'openid profile email';
     oauthService.issuer = 'https://dev-680689.oktapreview.com/oauth2/default';
     oauthService.tokenValidationHandler = new JwksValidationHandler();
 
